@@ -386,7 +386,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       justify-items: center;
-      align-items: start;
+      align-items: stretch;
     }
 
     @media (min-width: 480px) {
@@ -423,7 +423,11 @@
       border-radius: 16px;
       padding: 1rem;
       width: 100%;
-      max-width: 140px;
+      max-width: 160px;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       text-align: center;
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       position: relative;
@@ -475,6 +479,12 @@
       overflow: hidden;
       color: rgb(0, 0, 0);
       font-size: 1.5rem;
+    }
+
+    .skill-icon-wrapper img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
     }
 
     @media (min-width: 640px) {
